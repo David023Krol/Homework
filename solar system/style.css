@@ -1,62 +1,130 @@
 
 body {
-    justify-content: center;
-    display: flex;
+    margin: 0;
+    padding: 0;
     background-color: black;
-    align-items: center;
     height: 100vh;
-}
-@keyframes rotate {
-    0% {
-    transform: rotate(0deg);
-    }
-
-    100% {
-    transform: rotate(360deg);
-    }
-
-    50% {box-shadow: 10px 20px 30px rgb(191, 191, 15);
-    }
-
-}
-
-    .sun {
-    width: 300px;
-    height: 300px;
-    background-color: rgb(255, 255, 1);
-    animation-name: rotate;
-    animation-delay: 0ms;
-    animation-duration: 1000s;
-    animation: rotate 10s linear infinite;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    box-shadow: 
+      50px 100px white,
+      200px 150px white,
+      300px 50px white,
+      400px 200px white;
+  }
+  
+  .solar-system {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @keyframes orbit-rotate {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  
+  .sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgb(255,255,1), rgb(255,204,0));
     border-radius: 50%;
-    box-shadow: inset 0 0 55px 0 rgb(0, 0, 0)
-}
-
-    .earth {
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 50px rgba(255,204,0,0.8);
+  }
+  
+  .orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    animation: orbit-rotate linear infinite;
+  }
+  
+  .orbit-earth {
+    width: 600px;
+    height: 600px;
+    animation-duration: 20s;
+  }
+  
+  .orbit-mars {
+    width: 800px;
+    height: 800px;
+    animation-duration: 30s;
+  }
+  
+  .orbit-venus {
+    width: 400px;
+    height: 400px;
+    animation-duration: 15s;
+  }
+  
+  .planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6), inset 0 0 20px rgba(0,0,0,0.8);
+  }
+  
+  .earth {
     width: 100px;
     height: 100px;
     background-color: rgb(36, 2, 223);
-    border-radius: 50%;
-    display: flex;
+    transform: translate(-50%, -50%) translateX(300px);
+  }
+  
+  .mars {
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle, rgb(255,80,80), rgb(200,0,0));
+    transform: translate(-50%, -50%) translateX(400px);
+  }
+  
+ 
+  .venus {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, rgb(255,204,204), rgb(255,102,102));
+    transform: translate(-50%, -50%) translateX(200px);
+  }
+  
+  .moon-orbit {
     position: absolute;
-    top: 200%;
-    box-shadow: inset 0 0 55px 0 rgb(0, 0, 0);
-}
-
-    .moon {
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    animation: orbit-rotate 5s linear infinite;
+  }
+  
+  .moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 50px;
     height: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255,255,255);
     border-radius: 50%;
-    display: flex;
-    position: absolute;
-    top: 200%;
-    box-shadow: inset 0 0 55px 0 rgb(0, 0, 0);
-}   
-
-
-
-
-
+    transform: translate(-50%, -50%) translateX(75px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6), inset 0 0 10px rgba(0,0,0,0.7);
+  }
   
