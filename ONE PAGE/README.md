@@ -8,7 +8,7 @@ Projekt je vytvořen pomocí následujících technologií:
 - **CSS** – Styly a vizuální úpravy
 
 ## Funkce
-- Hlavní stránka s úvodním bannerem a názvem společnosti
+- Hlavní stránka s úvodním logem 
 - Sekce „Naše služby“ s výčtem poskytovaných stavebních činností
 - Obrázková galerie s ukázkami projektů
 
