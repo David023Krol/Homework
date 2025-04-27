@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log('Odesláno:', { město: selectedCity, jméno: name, email: email });
 
-        // Simulace úspěšného odeslání
         formMessage.textContent = 'Odesláno!';
         formMessage.className = 'form-message success';
         setTimeout(() => {
