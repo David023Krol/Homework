@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktivní Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#tabulka" class="nav-link">Tabulka</a>
+            <a href="#formular" class="nav-link">Formulář</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tabulka" class="content-section">
+            <div class="section-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="icon"><path d="M3 3h18v2H3V3m0 4h18v2H3V7m0 4h18v2H3v-2m0 4h18v2H3v-2m0 4h18v2H3v-2Z"/></svg>
+                <h2>Data k prozkoumání</h2>
+            </div>
+            <div class="table-controls">
+                <input type="search" id="filter-by-city" placeholder="Filtruj město...">
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jméno</th>
+                            <th data-filter="city">Město</th>
+                            <th>Věk</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-table-body">
+                        <tr><td>Jan Novák</td><td>Praha</td><td>30</td></tr>
+                        <tr><td>Eva Svobodová</td><td>Brno</td><td>25</td></tr>
+                        <tr><td>Petr Dvořák</td><td>Plzeň</td><td>35</td></tr>
+                        <tr><td>Lucie Černá</td><td>Brno</td><td>28</td></tr>
+                        <tr><td>Tomáš Veselý</td><td>Ostrava</td><td>40</td></tr>
+                        <tr><td>Jana Horáková</td><td>Praha</td><td>22</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="formular" class="content-section">
+            <div class="section-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="icon"><path d="M12 2a10 10 0 0 0-8 5.5c-.41.72-.03 1.5.7 1.8l7.3 3.7c.3.1.6.1.9 0l7.3-3.7c.7-.3 1.1-.9 1.1-1.6A10 10 0 0 0 12 2Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
+                <h2>Zanechte nám zprávu</h2>
+            </div>
+            <div class="form-wrapper">
+                <div class="form-group">
+                    <label for="filter-city-select">Vyhledat město:</label>
+                    <input type="search" id="filter-city-select" placeholder="Začněte psát...">
+                </div>
+                <div class="form-group">
+                    <label for="mesto">Vyberte město:</label>
+                    <select id="mesto">
+                        <option value="">Všechna města</option>
+                        <option value="Praha">Praha</option>
+                        <option value="Brno">Brno</option>
+                        <option value="Plzeň">Plzeň</option>
+                        <option value="Ostrava">Ostrava</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="jmeno">Vaše jméno:</label>
+                    <input type="text" id="jmeno" placeholder="Jak vás můžeme oslovit?">
+                </div>
+                <div class="form-group">
+                    <label for="email">Váš e-mail:</label>
+                    <input type="email" id="email" placeholder="Vaše kontaktní adresa">
+                </div>
+                <button id="submit-form" class="submit-button">Odeslat zprávu</button>
+                <div id="form-message" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interaktivní Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
