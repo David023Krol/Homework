@@ -1,0 +1,451 @@
+{
+  "ucitel": [
+    {
+      "id": 1,
+      "jmeno": "Ivana",
+      "prijmeni": "Pásková",
+      "zkratka": "PAI"
+    },
+    {
+      "id": 2,
+      "jmeno": "Jakub",
+      "prijmeni": "Hájek",
+      "zkratka": "HAJ"
+    },
+    {
+      "id": 3,
+      "jmeno": "Petr",
+      "prijmeni": "Kozák",
+      "zkratka": "PKO"
+    },
+    {
+      "id": 4,
+      "jmeno": "Radek",
+      "prijmeni": "Boháč",
+      "zkratka": "BOR"
+    },
+    {
+      "id": 5,
+      "jmeno": "Jan",
+      "prijmeni": "Škoda",
+      "zkratka": "SKO"
+    },
+    {
+      "id": 6,
+      "jmeno": "Kristina",
+      "prijmeni": "Petráčková",
+      "zkratka": "PET"
+    },
+    {
+      "id": 7,
+      "jmeno": "Anna",
+      "prijmeni": "Marková",
+      "zkratka": "MAK"
+    },
+    {
+      "id": 8,
+      "jmeno": "Michal",
+      "prijmeni": "Bubílek",
+      "zkratka": "BUB"
+    },
+    {
+      "id": 9,
+      "jmeno": "Zdeněk",
+      "prijmeni": "Barborik",
+      "zkratka": "BAR"
+    },
+    {
+      "id": 10,
+      "jmeno": "Linda",
+      "prijmeni": "Pazderníková",
+      "zkratka": "PAZ"
+    }
+  ],
+
+  "ucebna": [
+    {
+      "id": 1,
+      "cislo": "11",
+      "ucel": "obecné"
+    },
+    {
+      "id": 2,
+      "cislo": "21",
+      "ucel": "informatika"
+    },
+    {
+      "id": 3,
+      "cislo": "12",
+      "ucel": "obecné"
+    },
+    {
+      "id": 4,
+      "cislo": "2",
+      "ucel": "elektrotechnika"
+    },
+    {
+      "id": 5,
+      "cislo": "15",
+      "ucel": "obecné"
+    },
+    {
+      "id": 6,
+      "cislo": "10",
+      "ucel": "obecné"
+    },
+    {
+      "id": 7,
+      "cislo": "JAZ1",
+      "ucel": "jazyky"
+    },
+    {
+      "id": 8,
+      "cislo": "H",
+      "ucel": "sport"
+    },
+    {
+      "id": 9,
+      "cislo": "31",
+      "ucel": "informatika"
+    },
+    {
+      "id": 10,
+      "cislo": "4",
+      "ucel": "informatika"
+    }
+  ],
+
+  "predmet": [
+    {
+      "id": 1,
+      "nazev": "Literatura",
+      "zkratka": "LU"
+    },
+    {
+      "id": 2,
+      "nazev": "Multimédia a design",
+      "zkratka": "MULD"
+    },
+    {
+      "id": 3,
+      "nazev": "Šifrování",
+      "zkratka": "ŠIF"
+    },
+    {
+      "id": 4,
+      "nazev": "Mechatronika",
+      "zkratka": "MECH"
+    },
+    {
+      "id": 5,
+      "nazev": "Matematický seminář",
+      "zkratka": "SMA"
+    },
+    {
+      "id": 6,
+      "nazev": "Matematika",
+      "zkratka": "MAT"
+    },
+    {
+      "id": 7,
+      "nazev": "Anglický jazyk",
+      "zkratka": "ANG"
+    },
+    {
+      "id": 8,
+      "nazev": "Český jazyk",
+      "zkratka": "CJ"
+    },
+    {
+      "id": 9,
+      "nazev": "Seminář Anglického jazyka",
+      "zkratka": "ANGs"
+    },
+    {
+      "id": 10,
+      "nazev": "Webové aplikace",
+      "zkratka": "WAP"
+    },
+    {
+      "id": 11,
+      "nazev": "Tělesná výchova",
+      "zkratka": "TEV"
+    },
+    {
+      "id": 12,
+      "nazev": "Počítačová grafika",
+      "zkratka": "PGR"
+    },
+    {
+      "id": 13,
+      "nazev": "Programování",
+      "zkratka": "PRG"
+    },
+    {
+      "id": 14,
+      "nazev": "Programové vybavení",
+      "zkratka": "PRV"
+    },
+    {
+      "id": 15,
+      "nazev": "Seminář Českého jazyka a literatury",
+      "zkratka": "CJLs"
+    },
+    {
+      "id": 16,
+      "nazev": "Počítačové hry",
+      "zkratka": "PHR"
+    }
+  ],
+
+  "rozvrh": [
+    {
+      "den": "Pondělí",
+      "zacatek": "8:05",
+      "konec": "8:50",
+      "ucebna_id": 1,
+      "predmet_id": 1,
+      "ucitel_id": 1
+    },
+    {
+      "den": "Pondělí",
+      "zacatek": "9:00",
+      "konec": "9:45",
+      "ucebna_id": 2,
+      "predmet_id": 2,
+      "ucitel_id": 2
+    },
+    {
+      "den": "Pondělí",
+      "zacatek": "10:05",
+      "konec": "10:50",
+      "ucebna_id": 2,
+      "predmet_id": 2,
+      "ucitel_id": 2
+    },
+    {
+      "den": "Pondělí",
+      "zacatek": "11:00",
+      "konec": "11:45",
+      "ucebna_id": 3,
+      "predmet_id": 3,
+      "ucitel_id": 3
+    },
+    {
+      "den": "Pondělí",
+      "zacatek": "11:55",
+      "konec": "12:40",
+      "ucebna_id": 3,
+      "predmet_id": 3,
+      "ucitel_id": 3
+    },
+    {
+      "den": "Pondělí",
+      "zacatek": "12:45",
+      "konec": "13:30",
+      "ucebna_id": 4,
+      "predmet_id": 4,
+      "ucitel_id": 4
+    },
+    {
+      "den": "Úterý",
+      "zacatek": "7:15",
+      "konec": "8:00",
+      "ucebna_id": 5,
+      "predmet_id": 5,
+      "ucitel_id": 5
+    },
+    {
+      "den": "Úterý",
+      "zacatek": "8:05",
+      "konec": "8:50",
+      "ucebna_id": 6,
+      "predmet_id": 6,
+      "ucitel_id": 5
+    },
+    {
+      "den": "Úterý",
+      "zacatek": "9:00",
+      "konec": "9:45",
+      "ucebna_id": 2,
+      "predmet_id": 4,
+      "ucitel_id": 4
+    },
+    {
+      "den": "Úterý",
+      "zacatek": "10:05",
+      "konec": "10:50",
+      "ucebna_id": 7,
+      "predmet_id": 7,
+      "ucitel_id": 6
+    },
+    {
+      "den": "Úterý",
+      "zacatek": "11:00",
+      "konec": "11:45",
+      "ucebna_id": 7,
+      "predmet_id": 7,
+      "ucitel_id": 6
+    },
+    {
+      "den": "Úterý",
+      "zacatek": "11:55",
+      "konec": "12:40",
+      "ucebna_id": 5,
+      "predmet_id": 8,
+      "ucitel_id": 7
+    },
+    {
+      "den": "Úterý",
+      "zacatek": "12:45",
+      "konec": "13:30",
+      "ucebna_id": 7,
+      "predmet_id": 9,
+      "ucitel_id": 6
+    },
+    {
+      "den": "Středa",
+      "zacatek": "8:05",
+      "konec": "8:50",
+      "ucebna_id": 15,
+      "predmet_id": 10,
+      "ucitel_id": 8
+    },
+    {
+      "den": "Středa",
+      "zacatek": "9:00",
+      "konec": "9:45",
+      "ucebna_id": 3,
+      "predmet_id": 6,
+      "ucitel_id": 5
+    },
+    {
+      "den": "Středa",
+      "zacatek": "10:05",
+      "konec": "10:50",
+      "ucebna_id": 7,
+      "predmet_id": 7,
+      "ucitel_id": 6
+    },
+    {
+      "den": "Středa",
+      "zacatek": "11:00",
+      "konec": "11:45",
+      "ucebna_id": 5,
+      "predmet_id": 8,
+      "ucitel_id": 7
+    },
+    {
+      "den": "Středa",
+      "zacatek": "11:55",
+      "konec": "12:40",
+      "ucebna_id": 8,
+      "predmet_id": 11,
+      "ucitel_id": 9
+    },
+    {
+      "den": "Středa",
+      "zacatek": "12:45",
+      "konec": "13:30",
+      "ucebna_id": 8,
+      "predmet_id": 11,
+      "ucitel_id": 9
+    },
+    {
+      "den": "Čtvrtek",
+      "zacatek": "8:05",
+      "konec": "8:50",
+      "ucebna_id": 9,
+      "predmet_id": 12,
+      "ucitel_id": 10
+    },
+    {
+      "den": "Čtvrtek",
+      "zacatek": "9:00",
+      "konec": "9:45",
+      "ucebna_id": 9,
+      "predmet_id": 12,
+      "ucitel_id": 10
+    },
+    {
+      "den": "Čtvrtek",
+      "zacatek": "10:05",
+      "konec": "10:50",
+      "ucebna_id": 3,
+      "predmet_id": 6,
+      "ucitel_id": 5
+    },
+    {
+      "den": "Čtvrtek",
+      "zacatek": "11:00",
+      "konec": "11:45",
+      "ucebna_id": 10,
+      "predmet_id": 13,
+      "ucitel_id": 8
+    },
+    {
+      "den": "Čtvrtek",
+      "zacatek": "11:55",
+      "konec": "12:40",
+      "ucebna_id": 10,
+      "predmet_id": 13,
+      "ucitel_id": 8
+    },
+    {
+      "den": "Čtvrtek",
+      "zacatek": "12:45",
+      "konec": "13:30",
+      "ucebna_id": 2,
+      "predmet_id": 14,
+      "ucitel_id": 2
+    },
+    {
+      "den": "Čtvrtek",
+      "zacatek": "13:35",
+      "konec": "14:20",
+      "ucebna_id": 2,
+      "predmet_id": 14,
+      "ucitel_id": 2
+    },
+    {
+      "den": "Pátek",
+      "zacatek": "8:05",
+      "konec": "8:50",
+      "ucebna_id": 3,
+      "predmet_id": 1,
+      "ucitel_id": 1
+    },
+    {
+      "den": "Pátek",
+      "zacatek": "9:00",
+      "konec": "9:45",
+      "ucebna_id": 5,
+      "predmet_id": 15,
+      "ucitel_id": 1
+    },
+    {
+      "den": "Pátek",
+      "zacatek": "10:05",
+      "konec": "10:50",
+      "ucebna_id": 2,
+      "predmet_id": 16,
+      "ucitel_id": 8
+    },
+    {
+      "den": "Pátek",
+      "zacatek": "11:00",
+      "konec": "11:45",
+      "ucebna_id": 2,
+      "predmet_id": 16,
+      "ucitel_id": 8
+    },
+    {
+      "den": "Pátek",
+      "zacatek": "11:55",
+      "konec": "12:40",
+      "ucebna_id": 9,
+      "predmet_id": 10,
+      "ucitel_id": 8
+    }
+  ]
+}
