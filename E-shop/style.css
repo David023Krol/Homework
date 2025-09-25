@@ -1,0 +1,249 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideshow 20s infinite;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url('/img/fotka\ 1.webp');
+    }
+    33% {
+        background-image: url('/img/fotka\ 2.jpg');
+    }
+    66% {
+        background-image: url('/img/fotka\ 3.jpg');
+    }
+    100% {
+        background-image: url('/img/fotka\ 4.jpg');
+    }
+}
+
+.navbar {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.logo-icon {
+    font-size: 24px;
+    margin-right: 6px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: rgb(226, 68, 68);
+}
+
+.hero {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.btn-primary {
+    background-color: #f16e61;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #d6554f;
+}
+
+.favorites {
+    text-align: center;
+    margin: 30px 0 60px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.favorites h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 160px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.product-card img {
+    width: 120px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+}
+
+.price {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-card button {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.product-card button:hover {
+    background-color: #333;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.3);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    margin-top: 8px;
+}
+
+.footer-nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 6px;
+    font-weight: 600;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.form-status {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.form-status.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.form-status.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+

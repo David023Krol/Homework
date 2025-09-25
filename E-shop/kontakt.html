@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontakt - TrendyWear</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">👕</span> <strong>TrendyWear</strong>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="nabidka.html">Nabídka</a></li>
+                <li><a href="onas.html">O nás</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact" style="padding: 40px; max-width: 600px; margin: auto; color: #ffffff;">
+            <h2>Kontaktujte nás</h2>
+            <p>Máte otázky nebo potřebujete poradit? Napište nám!</p>
+            <form>
+                <label for="name">Jméno:</label><br/>
+                <input type="text" id="name" name="name" placeholder="Vaše jméno..." required style="width: 100%; padding: 8px; margin: 6px 0 12px 0;"/><br/>
+                
+                <label for="email">Email:</label><br/>
+                <input type="email" id="email" name="email" placeholder="Vaš email..." required style="width: 100%; padding: 8px; margin: 6px 0 12px 0;"/><br/>
+                
+                <label for="message">Zpráva:</label><br/>
+                <textarea id="message" name="message" rows="5" placeholder="Vaše zpráva..." required style="width: 100%; padding: 8px; margin: 6px 0 12px 0;"></textarea><br/>
+                
+                <button type="submit" class="btn-primary">Odeslat</button>
+            </form>
+            <div id="form-status" class="form-status"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <p>© 2025 TrendyWear. Všechna práva vyhrazena.</p>
+          <nav class="footer-nav">
+            <a href="index.html">Domů</a> |
+            <a href="nabidka.html">Nabídka</a> |
+            <a href="onas.html">O nás</a>
+          </nav>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const statusBox = document.getElementById("form-status");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Získání hodnot
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      // Reset statusu
+      statusBox.textContent = "";
+      statusBox.className = "form-status";
+
+      // Validace
+      if (!name || !email || !message) {
+        showStatus("Vyplňte prosím všechna pole.", "error");
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        showStatus("Zadejte platnou e-mailovou adresu.", "error");
+        return;
+      }
+
+      // Úspěšné odeslání
+      showStatus(`Děkujeme, ${name}! Vaše zpráva byla odeslána.`, "success");
+      form.reset();
+    });
+
+    function showStatus(msg, type) {
+      statusBox.textContent = msg;
+      statusBox.classList.add(type === "success" ? "success" : "error");
+    }
+  });
+</script>
+
+  
