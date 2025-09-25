@@ -61,16 +61,13 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      // Získání hodnot
       const name = form.name.value.trim();
       const email = form.email.value.trim();
       const message = form.message.value.trim();
 
-      // Reset statusu
       statusBox.textContent = "";
       statusBox.className = "form-status";
 
-      // Validace
       if (!name || !email || !message) {
         showStatus("Vyplňte prosím všechna pole.", "error");
         return;
@@ -82,7 +79,6 @@
         return;
       }
 
-      // Úspěšné odeslání
       showStatus(`Děkujeme, ${name}! Vaše zpráva byla odeslána.`, "success");
       form.reset();
     });
@@ -93,5 +89,6 @@
     }
   });
 </script>
+
 
   
